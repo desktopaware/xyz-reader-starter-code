@@ -26,11 +26,13 @@
         android:layout_width="match_parent"
         android:layout_height="112dp"
         android:background="@color/theme_primary"
-        android:elevation="4dp">
+        android:elevation="4dp"
+        android:fitsSystemWindows="true">
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:fitsSystemWindows="true">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -44,7 +46,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/logo"
-                android:contentDescription="@string/app_name" />
+                android:contentDescription="@string/app_name"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"/>
 
 
             </android.support.v7.widget.Toolbar>
